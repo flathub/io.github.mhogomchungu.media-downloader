@@ -10,7 +10,8 @@
         "--socket=fallback-x11",
         "--filesystem=xdg-download",
         "--share=network",
-        "--device=dri"
+        "--device=dri",
+        "--talk-name=org.kde.StatusNotifierWatcher"
     ],
     "modules": [
         {
@@ -20,8 +21,8 @@
             "sources": [
                 {
                      "type": "archive",
-                      "url": "https://github.com/mhogomchungu/media-downloader/releases/download/4.9.0/media-downloader-4.9.0.1.tar.xz",
-                      "sha256": "c1e33ebe56500c1699b8b49382a816a1df66b18dbd12eb91f80a44ad0b88d9c2"
+                      "url": "https://github.com/mhogomchungu/media-downloader/releases/download/5.0.0/media-downloader-5.0.0.tar.xz",
+                      "sha256": "de11d95d1473bdc69dee687b3bd18afca0225be69fffc5d983c7b81d74f2b2d7"
                 },
                 {
                     "type": "file",
