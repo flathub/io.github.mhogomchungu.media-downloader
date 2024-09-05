@@ -21,8 +21,8 @@
             "sources": [
                 {
                      "type": "archive",
-                      "url": "https://github.com/mhogomchungu/media-downloader/releases/download/5.0.1/media-downloader-5.0.1.tar.xz",
-                      "sha256": "ce8a1d794be4aa9d9b491b01fd982d5f75dc0052c41cef0752e14f676e3bb98f"
+                      "url": "https://github.com/mhogomchungu/media-downloader/releases/download/5.1.0/media-downloader-5.1.0.tar.xz",
+                      "sha256": "446e346e6dc82974838a29f6290edbbba8280bebcfa07b40be2da254b596de80"
                 },
                 {
                     "type": "file",
