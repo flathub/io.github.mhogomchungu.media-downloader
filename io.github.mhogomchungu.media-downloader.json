@@ -1,45 +1,64 @@
 {
-    "app-id": "io.github.mhogomchungu.media-downloader",
-    "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
-    "sdk": "org.kde.Sdk",
-    "command": "io.github.mhogomchungu.media-downloader",
-    "finish-args": [
-        "--share=ipc",
-        "--socket=wayland",
-        "--socket=fallback-x11",
-        "--filesystem=xdg-download",
-        "--share=network",
-        "--device=dri",
-        "--talk-name=org.kde.StatusNotifierWatcher"
-    ],
-    "modules": [
+  "app-id" : "io.github.mhogomchungu.media-downloader",
+  "runtime" : "org.kde.Platform",
+  "runtime-version" : "6.7",
+  "sdk" : "org.kde.Sdk",
+  "command" : "io.github.mhogomchungu.media-downloader",
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--filesystem=xdg-download",
+    "--share=network",
+    "--device=dri",
+    "--talk-name=org.kde.StatusNotifierWatcher"
+  ],
+  "modules" : [
+    {
+      "name" : "mutagen",
+      "buildsystem" : "simple",
+      "build-commands" : [
+        "`pwd`/setup.py build",
+        "`pwd`/setup.py install --prefix /app"
+      ],
+      "cleanup" : [],
+      "sources" : [
         {
-            "name": "io.github.mhogomchungu.media-downloader",
-            "buildsystem": "cmake-ninja",
-            "config-opts": ["-DCMAKE_BUILD_TYPE=release","-DBUILD_FLATPAK=TRUE"],
-            "sources": [
-                {
-                     "type": "archive",
-                      "url": "https://github.com/mhogomchungu/media-downloader/releases/download/5.1.0/media-downloader-5.1.0.tar.xz",
-                      "sha256": "446e346e6dc82974838a29f6290edbbba8280bebcfa07b40be2da254b596de80"
-                },
-                {
-                    "type": "file",
-                    "url": "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.png",
-                    "sha256": "2e8158f8c46cb6e39c007c9cf6106c12c1bb6b116057bf4a72d048dfbcab4598"
-                },
-                {
-                    "type": "file",
-                    "url": "https://raw.githubusercontent.com/mhogomchungu/media-downloader/c5aafbae90462285bbe23e37d8982067ca388f0a/src/flatpak/io.github.mhogomchungu.media-downloader.metainfo.xml",
-                    "sha256": "b049ffea0f352d62d5b82f890af161ba25e9682425402dc63ecc02bdcfe6f72b"
-                },
-                {
-                    "type": "file",
-                    "url": "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.desktop",
-                    "sha256": "ee6793a6ebbeabcd2ba5bb05fd07d3e48d6607374c02b9583e45eaef61555082"
-                }
-            ]
-       }
-   ]
+          "type" : "archive",
+          "url" : "https://github.com/quodlibet/mutagen/releases/download/release-1.47.0/mutagen-1.47.0.tar.gz",
+          "sha256" : "719fadef0a978c31b4cf3c956261b3c58b6948b32023078a2117b1de09f0fc99"
+        }
+      ]
+    },
+    {
+      "name" : "io.github.mhogomchungu.media-downloader",
+      "buildsystem" : "cmake-ninja",
+      "config-opts" : [
+        "-DCMAKE_BUILD_TYPE=release",
+        "-DBUILD_FLATPAK=TRUE"
+      ],
+      "sources" : [
+        {
+          "type" : "archive",
+          "url" : "https://github.com/mhogomchungu/media-downloader/archive/refs/tags/5.1.0.tar.gz",
+          "sha256" : "0781bb05ed585f670d87cc8d769278691f8cd9b6b0913e78d7623c15c42c285b"
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.png",
+          "sha256" : "2e8158f8c46cb6e39c007c9cf6106c12c1bb6b116057bf4a72d048dfbcab4598"
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/c5aafbae90462285bbe23e37d8982067ca388f0a/src/flatpak/io.github.mhogomchungu.media-downloader.metainfo.xml",
+          "sha256" : "b049ffea0f352d62d5b82f890af161ba25e9682425402dc63ecc02bdcfe6f72b"
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.desktop",
+          "sha256" : "ee6793a6ebbeabcd2ba5bb05fd07d3e48d6607374c02b9583e45eaef61555082"
+        }
+      ]
+    }
+  ]
 }
