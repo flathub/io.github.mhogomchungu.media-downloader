@@ -41,7 +41,7 @@
         {
           "type" : "archive",
           "url" : "https://github.com/mhogomchungu/media-downloader/releases/download/5.1.0/media-downloader-flatpak-git.tar.xz",
-          "sha256" : "75fdd8ee1c211ffa9ea69a4b3f5fecdfb982c5b74b5000b81b481110aa332ee1"
+          "sha256" : "0935d39021fd61ccd1e55581b37c3210d817708f783b8194d096273d936082d8"
         },
         {
           "type" : "file",
