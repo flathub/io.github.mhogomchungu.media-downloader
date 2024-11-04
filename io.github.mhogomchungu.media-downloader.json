@@ -40,8 +40,8 @@
       "sources" : [
         {
           "type" : "archive",
-          "url" : "https://github.com/mhogomchungu/media-downloader/releases/download/5.1.0/media-downloader-flatpak-git.tar.xz",
-          "sha256" : "75fdd8ee1c211ffa9ea69a4b3f5fecdfb982c5b74b5000b81b481110aa332ee1"
+          "url" : "https://github.com/mhogomchungu/media-downloader/releases/download/5.2.0/media-downloader-5.2.0.tar.xz",
+          "sha256" : "bda9eb5f8f40ef7074cca6de567802e60e06ed6c4c1f54366aab46f8be5c947b"
         },
         {
           "type" : "file",
