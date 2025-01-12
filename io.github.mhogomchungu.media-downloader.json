@@ -50,6 +50,21 @@
             "type" : "git",
             "tag-pattern" : "^([\\d.]+)$"
           }
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.png",
+          "sha256" : "2e8158f8c46cb6e39c007c9cf6106c12c1bb6b116057bf4a72d048dfbcab4598"
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/c5aafbae90462285bbe23e37d8982067ca388f0a/src/flatpak/io.github.mhogomchungu.media-downloader.metainfo.xml",
+          "sha256" : "b049ffea0f352d62d5b82f890af161ba25e9682425402dc63ecc02bdcfe6f72b"
+        },
+        {
+          "type" : "file",
+          "url" : "https://raw.githubusercontent.com/mhogomchungu/media-downloader/a186152191cc5bf6259ae5e6d2fc12a9e3c0a0bc/src/flatpak/io.github.mhogomchungu.media-downloader.desktop",
+          "sha256" : "ee6793a6ebbeabcd2ba5bb05fd07d3e48d6607374c02b9583e45eaef61555082"
         }
       ]
     }
