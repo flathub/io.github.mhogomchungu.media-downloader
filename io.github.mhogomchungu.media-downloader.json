@@ -34,24 +34,14 @@
             ]
         },
         {
-            "name": "io.github.mhogomchungu.media-downloader",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=release",
-                "-DBUILD_FLATPAK=TRUE"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.2.2",
-                    "commit": "7f0681a743115a0614c60014189789e71e901551",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
-                }
-            ]
+          "type" : "git",
+          "url" : "https://github.com/mhogomchungu/media-downloader.git",
+          "tag" : "5.2.2",
+          "commit" : "7f0681a743115a0614c60014189789e71e901551",
+          "x-checker-data" : {
+            "type" : "git",
+            "tag-pattern" : "^([\\d.]+)$"
+          }
         }
     ]
 }
