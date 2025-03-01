@@ -1,57 +1,57 @@
 {
-  "app-id" : "io.github.mhogomchungu.media-downloader",
-  "runtime" : "org.kde.Platform",
-  "runtime-version" : "6.8",
-  "sdk" : "org.kde.Sdk",
-  "command" : "io.github.mhogomchungu.media-downloader",
-  "finish-args" : [
-    "--share=ipc",
-    "--socket=wayland",
-    "--socket=fallback-x11",
-    "--filesystem=xdg-download",
-    "--share=network",
-    "--device=dri",
-    "--talk-name=org.kde.StatusNotifierWatcher"
-  ],
-  "modules" : [
-    {
-      "name" : "mutagen",
-      "buildsystem" : "simple",
-      "build-commands" : [
-        "pip3 install --prefix=/app . --no-build-isolation"
-      ],
-      "sources" : [
+    "app-id": "io.github.mhogomchungu.media-downloader",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.8",
+    "sdk": "org.kde.Sdk",
+    "command": "io.github.mhogomchungu.media-downloader",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--filesystem=xdg-download",
+        "--share=network",
+        "--device=dri",
+        "--talk-name=org.kde.StatusNotifierWatcher"
+    ],
+    "modules": [
         {
-          "type" : "git",
-          "url" : "https://github.com/quodlibet/mutagen.git",
-          "tag" : "release-1.47.0",
-          "commit" : "e38a475b4e00e248e04c50901d75b526464550d3",
-          "x-checker-data" : {
-            "type" : "git",
-            "tag-pattern" : "^release-([\\d.]+)$"
-          }
-        }
-      ]
-    },
-    {
-      "name" : "io.github.mhogomchungu.media-downloader",
-      "buildsystem" : "cmake-ninja",
-      "config-opts" : [
-        "-DCMAKE_BUILD_TYPE=release",
-        "-DBUILD_FLATPAK=TRUE"
-      ],
-      "sources" : [
+            "name": "mutagen",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app . --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/quodlibet/mutagen.git",
+                    "tag": "release-1.47.0",
+                    "commit": "e38a475b4e00e248e04c50901d75b526464550d3",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^release-([\\d.]+)$"
+                    }
+                }
+            ]
+        },
         {
-          "type" : "git",
-          "url" : "https://github.com/mhogomchungu/media-downloader.git",
-          "tag" : "5.2.2",
-          "commit" : "7f0681a743115a0614c60014189789e71e901551",
-          "x-checker-data" : {
-            "type" : "git",
-            "tag-pattern" : "^([\\d.]+)$"
-          }
+            "name": "io.github.mhogomchungu.media-downloader",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=release",
+                "-DBUILD_FLATPAK=TRUE"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/mhogomchungu/media-downloader.git",
+                    "tag": "5.3.0",
+                    "commit": "9933e9829aa93fa1a093e1d2211fc87d566c3824",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
