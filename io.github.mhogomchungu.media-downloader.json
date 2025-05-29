@@ -44,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.3.3",
-                    "commit": "2b061c1af663b4614f2913fcfd8c75100bf817f9",
+                    "tag": "5.4.0",
+                    "commit": "47934763b757216b4bc4702d4428337047e97519",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
