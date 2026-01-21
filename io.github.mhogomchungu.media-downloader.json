@@ -60,8 +60,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.4.7",
-                    "commit": "aa42c75011ae918f1d986b319b925cfa68876f49",
+                    "tag": "5.4.8",
+                    "commit": "f073f11f71e752c68e8ff097a2ad2850127d86b2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
