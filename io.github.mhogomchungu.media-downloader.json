@@ -80,6 +80,12 @@
       "build-commands" : [
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"puccinialin\" --no-build-isolation"
       ],
+      "cleanup" : [
+        "/bin/puccinialize",
+        "/bin/maturin",
+        "/bin/tqdm",
+        "/bin/httpx"
+      ],
       "sources" : [
         {
           "type" : "file",
@@ -142,8 +148,6 @@
       "name" : "python3-maturin",
       "buildsystem" : "simple",
       "build-commands" : [
-        "pwd",
-        "ls -l .",
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"maturin\" --no-build-isolation"
       ],
       "build-options" : {
@@ -152,6 +156,9 @@
           "CARGO_HOME" : "/run/build/python3-maturin/cargo"
         }
       },
+      "cleanup" : [
+        "/bin/maturin"
+      ],
       "sources" : [
         {
           "type" : "archive",
@@ -6764,7 +6771,7 @@
       ]
     },
     {
-      "name" : "cffi-build",
+      "name" : "python3-cffi",
       "buildsystem" : "simple",
       "build-commands" : [
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"cffi\" --no-build-isolation"
@@ -6786,6 +6793,7 @@
       "name" : "python3-svtplay-dl",
       "buildsystem" : "simple",
       "build-commands" : [
+        "tar -czf svtplay_dl-0+untagged.1.g8a26635.tar.gz svtplay_dl-0+untagged.1.g8a26635",
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"svtplay-dl\" --no-build-isolation"
       ],
       "build-options" : {
@@ -6795,13 +6803,16 @@
         }
       },
       "cleanup" : [
-        "/app/bin/svtplay-dl",
-        "/app/bin/maturin",
-        "/app/bin/puccinialin",
-        "/app/bin/tqpm",
-        "/app/bin/normalizer"
+        "/bin/normalizer",
+        "/bin/tqpm"
       ],
       "sources" : [
+        {
+          "type" : "git",
+          "url" : "https://github.com/spaam/svtplay-dl.git",
+          "commit" : "8a2663541efe0d652fc5c95c05373ea2d3911a8b",
+          "dest" : "svtplay_dl-0+untagged.1.g8a26635"
+        },
         {
           "type" : "archive",
           "archive-type" : "tar-gzip",
@@ -7323,11 +7334,6 @@
         },
         {
           "type" : "file",
-          "url" : "https://files.pythonhosted.org/packages/34/37/e1d6da9ba4fe77111df66873ad74e4d46a560cd0fc57891cde6908d1e6ea/svtplay_dl-4.173.tar.gz",
-          "sha256" : "d50405a8eaaae44482a74cdcacfead72d6926d39e9239404ff6206f84275144b"
-        },
-        {
-          "type" : "file",
           "url" : "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl",
           "sha256" : "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4"
         }
@@ -7341,7 +7347,7 @@
         "-DBUILD_FLATPAK=TRUE"
       ],
       "sources" : [
-        {
+         {
           "type" : "git",
           "url" : "https://github.com/mhogomchungu/media-downloader.git",
           "tag" : "5.4.9",
