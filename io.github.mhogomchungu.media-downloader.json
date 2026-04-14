@@ -6812,8 +6812,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url" : "https://github.com/spaam/svtplay-dl/archive/refs/tags/4.179.tar.gz",
-                    "sha256" : "7b99d5a528735d0bbb6b7211afad29f60e7fbd39541ab3e305e63ec52a541f4e",
+                    "url": "https://github.com/spaam/svtplay-dl/archive/refs/tags/4.179.tar.gz",
+                    "sha256": "7b99d5a528735d0bbb6b7211afad29f60e7fbd39541ab3e305e63ec52a541f4e",
                     "dest": "svtplay-dl-4.179"
                 },
                 {
@@ -7353,8 +7353,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.5.0",
-                    "commit": "8178f7a81a5ae0cb42099010db0315a13899d035",
+                    "tag": "5.5.1",
+                    "commit": "1fbdc5c276e527c778749afa24d3bdfc5a46b575",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
