@@ -30,8 +30,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/quodlibet/mutagen.git",
-                    "tag": "release-1.47.0",
-                    "commit": "e38a475b4e00e248e04c50901d75b526464550d3",
+                    "tag": "release-1.48.0",
+                    "commit": "485f5328dc513594dc4d314f11a11fa2513b54be",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$"
