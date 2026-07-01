@@ -30,8 +30,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/quodlibet/mutagen.git",
-                    "tag": "release-1.48.0",
-                    "commit": "485f5328dc513594dc4d314f11a11fa2513b54be",
+                    "tag": "release-1.48.1",
+                    "commit": "452190d42ab2092577c77342d49157f8768d796f",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^release-([\\d.]+)$"
@@ -7353,8 +7353,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.6.1",
-                    "commit": "65eedd734f3175354d9f6067c4c5d3f38f21ae4f",
+                    "tag": "5.6.2",
+                    "commit": "185fbe912fa021f14209d6cc52c74a9e84c5edcd",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
