@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.mhogomchungu.media-downloader",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.10",
+    "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -7337,8 +7337,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/mhogomchungu/media-downloader.git",
-                    "tag": "5.6.7",
-                    "commit": "43c1d42f06e4c23643bce2a46864b7b4d9d78f96",
+                    "tag": "5.6.8",
+                    "commit": "93649266fe5a3c6096d3290e7285a51358ec2815",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
